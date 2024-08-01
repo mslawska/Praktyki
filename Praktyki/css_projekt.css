@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial';
+    background-color:white;
+    
+}
+
+#Nagłówek{
+    width: auto;
+    height: auto;
+    background-color: rgb(163, 177, 146);
+}
+#Zapisy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+    position: relative;  
+}
+#Zapisy img{
+    width: 50%;
+   
+}
+
+#zdjecie{
+    background-image: url("obraz2.jpg");
+    height: 500px;
+    width: 800px;
+    display: flex;
+    justify-items: center;
+    align-items: flex-end;
+    background-size: cover;
+}
+#Napis{
+    
+    color: rgba(46, 195, 98, 0.866);
+    background-color: rgb(0,0,0,0.5);
+    
+     
+}
+#Treningi{
+    width: auto;
+    height: auto;
+}
+
+
+h1{
+    text-align: center;
+    
+}
+
+h2{
+   
+}
+h3{
+    text-align: center;
+    font-family:'Times New Roman';
+}
+
+#Nagłówek img{
+    width: auto;
+    height: 50px;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    
+}
+thead {
+    font-family: 'Calibri';
+    background-color: rgb(86, 190, 101);
+}
+table{
+    
+    border-collapse: collapse;
+    tr,td,th {border: 1px solid black};
+    margin-left: auto;
+    margin-right: auto;   
+}
