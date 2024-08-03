@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<style>
+    .container{
+        background-color: #f2f2f2;
+        height: 450px;
+        padding: 20px;
+        margin-bottom: 100px;
+        margin: 0 auto;
+        width: 400px;
+        border-radius: 20px;
+        top:50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        border: 2px solid black;
+
+    }
+
+    .container label{
+      text-align: right;
+      width: 100px;
+      font-size: 20px;
+  
+    }
+
+    .Nagłówek{
+      background-image: linear-gradient(rgb(70, 216, 249), rgb(143, 237, 245));
+      border-radius: 300px;
+    }
+
+    .Nagłówek img{
+    width: auto;
+    height: 150px;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    }
+
+    h2{
+      color: rgb(0, 0, 0);
+      text-align: center;
+      font-size: 50px;
+    }
+
+    .przycisk{
+      height:30px;
+      width:100px;
+    }
+
+
+</style>
+
+  <div class="Nagłówek">
+    <h2>Skontaktuj się z nami</h2>
+    <img src="bieg2.png">
+  </div>
+
+
+<div class="container">
+      <div>
+      <label>Imię</label>
+      <br>
+      <input type="text" id="fname" name="firstname">
+    </div>
+    <br>
+     <div><label>Nazwisko</label>
+      <br>
+      <input type="text" id="lname" name="lastname">
+      </select>
+    </div> 
+    <br>
+    <div>
+      <label>E-mail</label>
+      <br>
+      <input type="text" id="mail" name="e-mail">
+    </div>
+    <br>
+        <div>
+      <label>Wiadomość</label>
+      <br>
+      <textarea id="wiadomosc" placeholder="Napisz wiadomość..." style="height:200px"></textarea>
+    <br>
+    <button class="przycisk">Wyślij</button>
+    </div>
+    </form>
+  </div> 

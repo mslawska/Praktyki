@@ -1,0 +1,86 @@
+body {
+    font-family: sans-serif;
+    background-color:white;
+    
+}
+
+.Nagłówek{
+    width: auto;
+    height: auto;
+    padding-right: 70%;
+}
+
+.Nagłówek img{
+    width: auto;
+    height: 150px;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    
+    background-image: linear-gradient(rgb(70, 216, 249), rgb(143, 237, 245));
+    height: 60px;
+    align-items: center;
+    border-radius: 300px;
+    
+}
+.container a{
+    text-decoration: none;
+    font-weight: 550;
+
+}
+
+
+.kontener{
+    display: grid;
+    justify-content: center;
+}
+.zdjecie{
+    
+    height: 500px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    margin: 10px 0px;
+    border-radius: 30px;
+}
+
+.zdjecie p{
+    color: rgba(255, 255, 255, 0.866);
+    display: flex;
+    font-size: 30px;
+    background-color: rgb(0,0,0,0.5);
+    
+}
+
+#z1{
+    background-image: url("buty.jpg");
+   
+
+}
+
+#z2{
+    background-image: url("zegar.jpg");
+    
+}
+
+
+h1{
+    text-align: center;
+    
+}
+
+h3{
+    text-align: center;
+    font-family:'Times New Roman';
+}
+
+
+
