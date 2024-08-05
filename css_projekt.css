@@ -5,17 +5,19 @@ body {
 }
 
 .Nagłówek{
-    width: auto;
+    display: flex;
+    
     height: auto;
-    padding-right: 70%;
+    align-items: center; 
+    justify-content: center;
+  
+    
 }
+
 
 .Nagłówek img{
     width: auto;
     height: 150px;
-    position: absolute;
-    top: 20px;
-    left: 50px;
     
 }
 
@@ -37,8 +39,9 @@ body {
 
 
 .kontener{
-    display: grid;
-    justify-content: center;
+    
+    width: 100%;
+    
 }
 .zdjecie{
     
@@ -50,19 +53,40 @@ body {
     background-size: cover;
     margin: 10px 0px;
     border-radius: 30px;
+
 }
 
-.zdjecie p{
+.zdjecie a{
     color: rgba(255, 255, 255, 0.866);
     display: flex;
     font-size: 30px;
     background-color: rgb(0,0,0,0.5);
+    text-decoration: none;
+}
+
+.karta1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+    
+
+}
+
+.karta2{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
     
 }
 
 #z1{
     background-image: url("buty.jpg");
-   
+    
 
 }
 
@@ -71,9 +95,19 @@ body {
     
 }
 
+#z3{
+    background-image: url("tetno2.jpg");
+}
+
+#z4{
+    background-image: url("dieta3.jpg");
+
+}
+
+
 
 h1{
-    text-align: center;
+    
     
 }
 
@@ -82,5 +116,34 @@ h3{
     font-family:'Times New Roman';
 }
 
+@media only screen and (max-width: 1080px){
 
+    .zdjecie{
+        width: 80%;
+        height: 350px;
+        
+    }
+
+    .Nagłówek img{
+        width: auto;
+        height: 65px;
+
+        top: 10px;
+        left: 140px;
+        
+    }
+
+    .Nagłówek{
+     
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+       
+        
+    }
+    
+}
 

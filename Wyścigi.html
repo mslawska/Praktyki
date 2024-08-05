@@ -18,9 +18,11 @@ main{
     justify-content: space-around;
     font-family: sans-serif;
     background-image: linear-gradient(rgb(70, 216, 249), rgb(143, 237, 245));
-    height: 60px;
+    height: 80px;
     align-items: center;
     border-radius: 300px;
+    padding: 0 10px;
+    flex-wrap: wrap;
     }
 
     .header a{
@@ -44,32 +46,23 @@ main{
         
     }
     
-    #section1 img{
-        height: 500px;  
+   .Karta img{
+        height: 500px;
+        width: 45%;  
         border-radius: 30px;
        
         
     }
-    #section2 img{
-        height: 450px;  
-        width: auto;  
-        border-radius: 30px;  
-    }
-    #section3 img{
-        height: 500px;    
-        border-radius: 30px;
-    }
+    
     .Karta{
      display: flex;
      flex-wrap: wrap;
-     width: 100%;
+     justify-content: space-between;
        
      
     }
-    .Karta-kontener{
-     margin-left: 50px;
-     margin-right: 50px;
-    }
+   
+
     .przycisk{
     height:40px;
     width:200px;
@@ -82,16 +75,88 @@ main{
     box-shadow: 0px 7px 20px 0px rgba(66, 68, 90, 1);
     border-radius: 10px;
     }
+
+
+
+    .Miasta{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex: 1;
+        }
+
+
+
+    @media only screen and (max-width: 1080px){
+        .header h3{
+            font-size: 15px;
+        }
+       
+        .header a{
+        text-decoration: none;
+        font-weight: 300px;
+        font-size: 15px;
+    }
+
+    .Karta{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    
+
+    .Karta img{
+        height: 50vw;  
+        border-radius: 30px;
+        width: 90%;
+        
+    }
+    
+    .Mapa{
+        width: 100vw;
+    }
+
+    .Mapa iframe{
+        width: 100%;
+    }
+    
+    }
+
+    @media only screen and (max-width: 610px){
+
+        .Miasta{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        flex: initial;
+        }
+    }
+
+    @media only screen and (max-width: 1340px){
+        .Karta{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+       
+    
+
+}
+
     
 </style>
 <body>
 <head>
     <div class="header">
         <h3>Wybierz w jakim mieście chcesz startować</h3>
+
+    <div class="Miasta">
     <div><a href="#section1">Szczecin</a></div>
     <div><a href="#section2">Warszawa</a></div>
     <div><a href="#section3">Poznań</a></div>
     </div>
+</div>
    
     <main>
        <section id="section1">
@@ -107,7 +172,7 @@ main{
                 </ul>
             </p>
         </div>
-        <div><h2>Lokalizacja startu</h2><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2827.0479985554693!2d14.56263771341638!3d53.42815892258467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47aa090b4747e3b5%3A0x20b10d9a360fd1eb!2sWa%C5%82y%20Chrobrego!5e0!3m2!1spl!2spl!4v1722589814131!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <div class="Mapa"><h2>Lokalizacja startu</h2><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2827.0479985554693!2d14.56263771341638!3d53.42815892258467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47aa090b4747e3b5%3A0x20b10d9a360fd1eb!2sWa%C5%82y%20Chrobrego!5e0!3m2!1spl!2spl!4v1722589814131!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
         </div>
     </div>
         <button class="przycisk">ZAPISZ SIĘ</button>
@@ -116,7 +181,7 @@ main{
     
 
         <section id="section2">
-            <div class="Nazwa"><h1>Warszazwa</h1></div> 
+            <div class="Nazwa"><h1>Warszawa</h1></div> 
            <div class="Karta-kontener"><div class="Karta"><img src="bieg5.jpeg">
             <div><p>
                 <ul>
@@ -127,7 +192,7 @@ main{
                 </ul>
                 </p>
             </div>
-            <div><h2>Lokalizacja startu</h2><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1452.4132006389723!2d21.010938347266876!3d52.249595223667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc6f0d06ff2b%3A0xc6dd4889bd3390ca!2sMuzeum%20Warszawy!5e0!3m2!1spl!2spl!4v1722591749953!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </ul></div>
+            <div class="Mapa"><h2>Lokalizacja startu</h2><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1452.4132006389723!2d21.010938347266876!3d52.249595223667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc6f0d06ff2b%3A0xc6dd4889bd3390ca!2sMuzeum%20Warszawy!5e0!3m2!1spl!2spl!4v1722591749953!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </ul></div>
         </div>
     </div>
         <button class="przycisk">ZAPISZ SIĘ</button>
@@ -145,7 +210,7 @@ main{
                 </ul>
             </p>
         </div>
-        <div><h2>Lokalizacja startu</h2><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20025.37439584441!2d16.914104303909415!3d52.44452292718656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045cb3046e0225%3A0xe368cedde860e1b1!2sFort%20V%20Waldersee%20I!5e0!3m2!1spl!2spl!4v1722591813502!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>     </div>             
+        <div class="Mapa"><h2>Lokalizacja startu</h2><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20025.37439584441!2d16.914104303909415!3d52.44452292718656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045cb3046e0225%3A0xe368cedde860e1b1!2sFort%20V%20Waldersee%20I!5e0!3m2!1spl!2spl!4v1722591813502!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>     </div>             
         </div>
         </div>
         <button class="przycisk">ZAPISZ SIĘ</button>

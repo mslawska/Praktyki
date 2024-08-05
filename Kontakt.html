@@ -8,6 +8,10 @@
 </head>
 
 <style>
+
+  body{
+    font-family: sans-serif;
+  }
     .container{
         background-color: #f2f2f2;
         height: 450px;
@@ -53,6 +57,61 @@
     .przycisk{
       height:30px;
       width:100px;
+    }
+
+    @media only screen and (max-width: 1080px){
+
+      .Nagłówek img{
+      width: auto;
+      height: 80px;
+      top: 10px;
+      left: 40px;
+    }
+
+    h2{
+
+      width: auto;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      font-size: 30px;
+    }
+
+
+    .container{
+        background-color: #f2f2f2;
+        height: 450px;
+        padding: 20px;
+        margin-bottom: 100px;
+        margin: 0 auto;
+        width: 400px;
+        border-radius: 20px;
+        top:50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        border: 2px solid black;
+
+    }
+
+    @media only screen and (max-width: 460px){
+
+  .Nagłówek img{
+  width: auto;
+  height: 60px;
+  top: 10px;
+  left: 30px;
+  }
+
+ 
+.container{
+ 
+  width: 80%;
+  height: 450px;
+}
+    
+h2{
+  font-size: 20px;
+}
     }
 
 
