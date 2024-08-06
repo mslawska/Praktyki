@@ -12,7 +12,24 @@
   body{
     font-family: sans-serif;
   }
-    .container{
+
+  .container{
+    display: flex;
+    justify-content: space-around;
+    
+    background-image: linear-gradient(rgb(70, 216, 249), rgb(143, 237, 245));
+    height: 60px;
+    align-items: center;
+    border-radius: 300px;
+    
+}
+.container a{
+    text-decoration: none;
+    font-weight: 550;
+
+}
+
+    .Box{
         background-color: #f2f2f2;
         height: 450px;
         padding: 20px;
@@ -25,10 +42,12 @@
         flex-direction: column;
         align-items: center;    
         border: 2px solid black;
+        margin-top: 30px;
+        margin-bottom: 30px;
 
     }
 
-    .container label{
+    .Box label{
       text-align: right;
       width: 100px;
       font-size: 20px;
@@ -40,7 +59,7 @@
       border-radius: 300px;
     }
 
-    .Nagłówek img{
+    .Header img{
     width: auto;
     height: 150px;
     position: absolute;
@@ -48,10 +67,10 @@
     left: 50px;
     }
 
-    h2{
+    h1{
       color: rgb(0, 0, 0);
       text-align: center;
-      font-size: 50px;
+      
     }
 
     .przycisk{
@@ -61,14 +80,14 @@
 
     @media only screen and (max-width: 1080px){
 
-      .Nagłówek img{
+      .Header img{
       width: auto;
       height: 80px;
       top: 10px;
       left: 40px;
     }
 
-    h2{
+    h1{
 
       width: auto;
       color: rgb(0, 0, 0);
@@ -77,7 +96,7 @@
     }
 
 
-    .container{
+    .Box{
         background-color: #f2f2f2;
         height: 450px;
         padding: 20px;
@@ -90,12 +109,13 @@
         flex-direction: column;
         align-items: center;    
         border: 2px solid black;
+        
 
     }
 
     @media only screen and (max-width: 460px){
 
-  .Nagłówek img{
+  .Header img{
   width: auto;
   height: 60px;
   top: 10px;
@@ -109,21 +129,76 @@
   height: 450px;
 }
     
-h2{
+h1{
   font-size: 20px;
 }
+
+
+
     }
+
+
+
+  }
+
+  .footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+    background-color: rgba(59, 146, 212, 0.366);
+    align-items: center;
+}
+
+.footer img{
+    width: auto;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.footer h1{
+    margin-right: 30px;
+}
+span {
+    content: "\2709";
+    font-size: 25px;
+    margin-bottom: 5px;
+
+  } 
+
+  a {
+    margin-left: 5px; 
+    text-decoration: none;
+   
+}
+
 
 
 </style>
 
-  <div class="Nagłówek">
-    <h2>Skontaktuj się z nami</h2>
-    <img src="bieg2.png">
+
+<body>
+
+<div class="Header">
+    
+  <header>
+      <h1>Skontaktuj się z nami</h1>
+      <img src="Photos/bieg2.png">
+  </header>
+
+  <div class="container">
+      <div><a href="praktykaprojekt.html#1">STRONA GŁÓWNA</a></div>
+      <div><a href="treningi.html">TRENINGI</a></div>
+      <div><a href="Wyscigi.html">WYŚCIGI</a></div>
+      <div><a href="Kontakt.html">KONTAKT</a></div>
   </div>
 
+</div>
 
-<div class="container">
+<div class="Box">
       <div>
       <label>Imię</label>
       <br>
@@ -151,3 +226,14 @@ h2{
     </div>
     </form>
   </div> 
+
+  <footer>
+    <div class = "footer">
+        <div><img src="Photos/bieg2.png"></div>
+        <div><h1>BIEGAJ Z NAMI!</h1></div>
+        <div style="display: flex; align-items: center;"><span>&#9993;</span><a href="mailto: biegajznami@gmail.com">biegajznami@gmail.com</a></div>
+    </div>
+    
+</footer>
+
+</body>

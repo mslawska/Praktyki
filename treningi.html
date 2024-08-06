@@ -41,14 +41,8 @@ color: white;
     
 }
 
-header{
-
-   background-color: rgba(0, 0, 0, 0.745);
-   color: white;
-   height: 100px;
-   width: 100%;
-   text-align: center;
-
+.Plany p{
+    max-width: 1240px;
     
 }
 
@@ -63,31 +57,116 @@ h2{
 
 @media only screen and (max-width: 1080px){
 
-    table{
+    table {
+    width: 50px; 
+    height: 50px; 
     
-    border-collapse: collapse;
-    tr {border: 1px solid};
-    
-      
-    }
+}
+
+    td, tr, th {
+    width: 50px; 
+    height: 20px;
+}
+
+.Plany p{
+    font-size: 3vw;
+}
 
 }
+
+@media only screen and (max-width: 610px){
+
+.Plany p{
+    font-size: 3vw;
+}
+
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    
+    background-image: linear-gradient(rgb(70, 216, 249), rgb(143, 237, 245));
+    height: 60px;
+    align-items: center;
+    border-radius: 300px;
+    
+}
+.container a{
+    text-decoration: none;
+    font-weight: 550;
+
+}
+
+
+.Header{
+    width: 100%;
+    
+}
+
+h1{
+    text-align: center;
+    
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+    background-color: rgba(59, 146, 212, 0.366);
+    align-items: center;
+}
+
+
+.footer img{
+    width: auto;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.footer h1{
+    margin-right: 30px;
+}
+span {
+    content: "\2709";
+    font-size: 25px;
+    margin-bottom: 5px;
+
+  } 
+
+  a {
+    margin-left: 5px; 
+    text-decoration: none;
+   
+}
+
 
 </STYLE>
 
 <body>
 
+<div class="Header">
+    
     <header>
-       
-       <h1>Plany treningowe</h1>
-   
+        <h1>Plany treningowe</h1>
     </header>
 
-    <div class=" Plany">
+    <div class="container">
+        <div><a href="praktykaprojekt.html#1">STRONA GŁÓWNA</a></div>
+        <div><a href="treningi.html">TRENINGI</a></div>
+        <div><a href="Wyscigi.html">WYŚCIGI</a></div>
+        <div><a href="Kontakt.html">KONTAKT</a></div>
+    </div>
 
+</div>
+    
 
-        
-            <h2>PLAN 5KM</h2>
+    <div class="Plany">
+         <h2>PLAN 5KM</h2>
             
       <table>
             <thead>
@@ -113,7 +192,7 @@ h2{
                 </tbody>
        </table>
 
-        </p>Ten plan treningowy na 5 km ma na celu pomóc Ci stopniowo zwiększać wytrzymałość i pewność siebie oraz zdobywać doświadczenie. Zauważysz również, że przez ostatnie kilka dni treningi stają się mniej intensywne – ma to na celu zapewnić ciału czas na odpoczynek i regenerację przed startem!</p>
+        <p>Ten plan treningowy na 5 km ma na celu pomóc Ci stopniowo zwiększać wytrzymałość i pewność siebie oraz zdobywać doświadczenie. Zauważysz również, że przez ostatnie kilka dni treningi stają się mniej intensywne – ma to na celu zapewnić ciału czas na odpoczynek i regenerację przed startem!</p>
     
    
 
@@ -181,7 +260,7 @@ h2{
         </tbody>
        </table> 
         
-        </p>Ten plan treningowy na półmaraton ma na celu pomóc Ci stopniowo zwiększać wytrzymałość i pewność siebie oraz zdobywać doświadczenie. Zauważysz również, że przez ostatnie kilka dni treningi stają się mniej intensywne – ma to na celu zapewnić ciału czas na odpoczynek i regenerację przed startem!</p>
+        <p>Ten plan treningowy na półmaraton ma na celu pomóc Ci stopniowo zwiększać wytrzymałość i pewność siebie oraz zdobywać doświadczenie. Zauważysz również, że przez ostatnie kilka dni treningi stają się mniej intensywne – ma to na celu zapewnić ciału czas na odpoczynek i regenerację przed startem!</p>
 
 
     </div>
@@ -213,9 +292,19 @@ h2{
              </tr>
         </tbody>
        </table> 
-        </p>Ten plan treningowy na półmaraton ma na celu pomóc Ci stopniowo zwiększać wytrzymałość i pewność siebie oraz zdobywać doświadczenie. Zauważysz również, że przez ostatnie kilka dni treningi stają się mniej intensywne – ma to na celu zapewnić ciału czas na odpoczynek i regenerację przed startem!</p>
+        <p>Ten plan treningowy na półmaraton ma na celu pomóc Ci stopniowo zwiększać wytrzymałość i pewność siebie oraz zdobywać doświadczenie. Zauważysz również, że przez ostatnie kilka dni treningi stają się mniej intensywne – ma to na celu zapewnić ciału czas na odpoczynek i regenerację przed startem!</p>
 
     </div>
     
 </div>
+
+<footer>
+    <div class = "footer">
+        <div><img src="Photos/bieg2.png"></div>
+        <div><h1>BIEGAJ Z NAMI!</h1></div>
+        <div style="display: flex; align-items: center;"><span>&#9993;</span><a href="mailto: biegajznami@gmail.com">biegajznami@gmail.com</a></div>
+    </div>
+    
+</footer>
+
 </body>
