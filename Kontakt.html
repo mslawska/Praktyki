@@ -9,74 +9,84 @@
 
 <style>
 
-  body{
-    font-family: sans-serif;
-  }
-
-  .container{
-    display: flex;
-    justify-content: space-around;
-    
-    background-image: linear-gradient(rgb(70, 216, 249), rgb(143, 237, 245));
-    height: 60px;
-    align-items: center;
-    border-radius: 300px;
-    
-}
-.container a{
-    text-decoration: none;
-    font-weight: 550;
-
+body{
+  font-family: sans-serif;
 }
 
-    .Box{
-        background-color: #f2f2f2;
-        height: 450px;
-        padding: 20px;
-        margin-bottom: 100px;
-        margin: 0 auto;
-        width: 400px;
-        border-radius: 20px;
-        top:50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;    
-        border: 2px solid black;
-        margin-top: 30px;
-        margin-bottom: 30px;
+.Menu{
+  display: flex;
+  justify-content: space-around;
+  background-image: linear-gradient(rgb(70, 216, 249), rgb(143, 237, 245));
+  height: 45px;
+  align-items: center;
+  border-radius: 300px;
+    
+}
 
-    }
+.Menu a{
+  text-decoration: none;
+  font-weight: 550;
 
-    .Box label{
-      text-align: right;
-      width: 100px;
-      font-size: 20px;
-  
-    }
+}
 
-    .Nagłówek{
-      background-image: linear-gradient(rgb(70, 216, 249), rgb(143, 237, 245));
-      border-radius: 300px;
-    }
+.Menu a:hover {
+  background-color: rgba(0, 73, 151, 0.516);
+  height: 20px;
+  width: 50px;
+  border-radius: 30px;
+  font-size: 20px;
+}
 
-    .Header img{
-    width: auto;
-    height: 150px;
-    position: absolute;
-    top: 20px;
-    left: 50px;
-    }
 
-    h1{
-      color: rgb(0, 0, 0);
-      text-align: center;
+.Box{
+
+  background-color: #f2f2f2;
+  height: 450px;
+  padding: 20px;
+  margin-bottom: 100px;
+  margin: 0 auto;
+  width: 400px;
+  border-radius: 20px;
+  top:50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;    
+  border: 2px solid black;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+
+.Box label{
+  text-align: right;
+  width: 100px;
+  font-size: 20px;
+}
+
+.Nagłówek{
+  background-image: linear-gradient(rgb(70, 216, 249), rgb(143, 237, 245));
+  border-radius: 300px;
+
+}
+
+.Header img{
+  width: auto;
+  height: 150px;
+  position: absolute;
+  top: 20px;
+  left: 50px;
+}
+
+h1{
+  color: rgb(0, 0, 0);
+  text-align: center;
       
-    }
+}
 
-    .przycisk{
-      height:30px;
-      width:100px;
-    }
+.button{
+  height:30px;
+  width:100px;
+}
 
     @media only screen and (max-width: 1080px){
 
@@ -85,18 +95,17 @@
       height: 80px;
       top: 10px;
       left: 40px;
-    }
+      }
 
-    h1{
+      h1{
 
       width: auto;
       color: rgb(0, 0, 0);
       text-align: center;
       font-size: 30px;
-    }
+      }
 
-
-    .Box{
+      .Box{
         background-color: #f2f2f2;
         height: 450px;
         padding: 20px;
@@ -109,37 +118,32 @@
         flex-direction: column;
         align-items: center;    
         border: 2px solid black;
-        
-
+        }
     }
 
     @media only screen and (max-width: 460px){
 
-  .Header img{
-  width: auto;
-  height: 60px;
-  top: 10px;
-  left: 30px;
-  }
+      .Header img{
+        width: auto;
+        height: 60px;
+        top: 10px;
+        left: 30px;
+      }
 
  
-.container{
+      .container{
  
-  width: 80%;
-  height: 450px;
-}
+        width: 80%;
+        height: 450px;
+      }
     
-h1{
-  font-size: 20px;
-}
-
-
-
+      h1{
+        font-size: 20px;
+      }
     }
 
 
 
-  }
 
   .footer{
     width: 100%;
@@ -189,7 +193,7 @@ span {
       <img src="Photos/bieg2.png">
   </header>
 
-  <div class="container">
+  <div class="Menu">
       <div><a href="praktykaprojekt.html#1">STRONA GŁÓWNA</a></div>
       <div><a href="treningi.html">TRENINGI</a></div>
       <div><a href="Wyscigi.html">WYŚCIGI</a></div>
@@ -222,7 +226,7 @@ span {
       <br>
       <textarea id="wiadomosc" placeholder="Napisz wiadomość..." style="height:200px"></textarea>
     <br>
-    <button class="przycisk">Wyślij</button>
+    <button class="button">Wyślij</button>
     </div>
     </form>
   </div> 

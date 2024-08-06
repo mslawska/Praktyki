@@ -7,20 +7,46 @@
 </head>
 
 <STYLE>
-    body{
-        font-size: 18px;
-        font-family: sans-serif;
-        display: flex;
-        flex-wrap: wrap;
-     
-    }
-    table{
+
+body{
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.Header{
+    width: 100%;
+}
+
+.Menu{
+    display: flex;
+    justify-content: space-around;
     
+    background-image: linear-gradient(rgb(70, 216, 249), rgb(143, 237, 245));
+    height: 45px;
+    align-items: center;
+    border-radius: 300px;
+    
+}
+.Menu a{
+    text-decoration: none;
+    font-weight: 550;
+
+}
+
+.Menu a:hover {
+    background-color: rgba(0, 73, 151, 0.516);
+    height: 20px;
+    width: 50px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+table{
     border-collapse: collapse;
     tr {border: 1px solid};
     
-      
-    }
+}
+
 td{
     padding: 20px;
 }
@@ -29,22 +55,27 @@ th{
     padding: 20px;
 }
 
-thead {
+thead{
 font-family: 'Calibri';
 background-color: rgb(43, 73, 181);
 color: white;
 }
 
-.Plany{
+.Box{
     margin-left: 20px;
     margin-right: 20px;
     
 }
 
-.Plany p{
+.Box p{
     max-width: 1240px;
     
 }
+
+h1{
+    text-align: center;
+}
+
 
 h2{
     text-shadow: 1px 4px 71px rgba(0, 3, 255, 1);
@@ -54,6 +85,8 @@ h2{
     margin-top: 100px;
     
 }
+
+
 
 @media only screen and (max-width: 1080px){
 
@@ -80,33 +113,6 @@ h2{
     font-size: 3vw;
 }
 
-}
-
-.container{
-    display: flex;
-    justify-content: space-around;
-    
-    background-image: linear-gradient(rgb(70, 216, 249), rgb(143, 237, 245));
-    height: 60px;
-    align-items: center;
-    border-radius: 300px;
-    
-}
-.container a{
-    text-decoration: none;
-    font-weight: 550;
-
-}
-
-
-.Header{
-    width: 100%;
-    
-}
-
-h1{
-    text-align: center;
-    
 }
 
 .footer{
@@ -144,28 +150,27 @@ span {
    
 }
 
-
 </STYLE>
 
 <body>
 
-<div class="Header">
+    <div class="Header">
     
-    <header>
-        <h1>Plany treningowe</h1>
-    </header>
+        <header>
+            <h1>Plany treningowe</h1>
+        </header>
 
-    <div class="container">
+     <div class="Menu">
         <div><a href="praktykaprojekt.html#1">STRONA GŁÓWNA</a></div>
         <div><a href="treningi.html">TRENINGI</a></div>
         <div><a href="Wyscigi.html">WYŚCIGI</a></div>
         <div><a href="Kontakt.html">KONTAKT</a></div>
-    </div>
+     </div>
 
-</div>
+    </div>
     
 
-    <div class="Plany">
+    <div class="Box">
          <h2>PLAN 5KM</h2>
             
       <table>
