@@ -65,7 +65,8 @@ ul{
 .box{
 
   background-color: #f2f2f2;
-  height: 450px;
+  width: 500px;
+  height: 100%;
   padding: 20px;
   margin-bottom: 100px;
   margin: 0 auto;
@@ -95,10 +96,7 @@ h1{
       
 }
 
-.button{
-  height:30px;
-  width:100px;
-}
+
 
     @media only screen and (max-width: 1080px){
 
@@ -113,7 +111,7 @@ h1{
       }
 
       .box{
-        background-color: #f2f2f2;
+        
         height: 450px;
         padding: 20px;
         margin-bottom: 100px;
@@ -182,6 +180,26 @@ span {
    
 }
 
+input, textarea{
+  background: transparent;
+  border: 0;
+  border-bottom: solid 2px #6ed73e;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  width: 300px;
+  padding: 10px 0;
+  margin-top: 30px
+}
+
+.button{
+  margin-top: 30px;
+  height:30px;
+  width: 100%;
+  background-color: transparent;
+  font-family: sans-serif;
+  border: 2px solid #6ed73e;
+}
 
 
 </style>
@@ -206,32 +224,28 @@ span {
    </header>
 
 <div class="box">
-      <div>
-      <label>Imię</label>
-      <br>
-      <input type="text" id="fname" name="firstname">
-    </div>
-    <br>
-     <div><label>Nazwisko</label>
-      <br>
-      <input type="text" id="lname" name="lastname">
-      </select>
-    </div> 
-    <br>
-    <div>
-      <label>E-mail</label>
-      <br>
-      <input type="text" id="mail" name="e-mail">
-    </div>
-    <br>
-        <div>
-      <label>Wiadomość</label>
-      <br>
-      <textarea id="wiadomosc" placeholder="Napisz wiadomość..." style="height:200px"></textarea>
-    <br>
-    <button class="button">Wyślij</button>
-    </div>
+    
+    <form>
+      <div class="data">
+        <input type="text" id="fname" placeholder="Imię"  name="firstname">
+      </div>
+
+      <div class="data">
+        <input type="text" id="lname" placeholder="Nazwisko" name="lastname">
+      </div> 
+
+      <div class="data">
+        <input type="text" id="mail" placeholder="E-mail" name="e-mail">
+      </div>
+
+      <div class="data">
+        <textarea id="wiadomosc" placeholder="Napisz wiadomość..." style="height:300px"></textarea>
+      
+        <button class="button">WYŚLIJ WIADOMOŚĆ</button>
+      </div>
+
     </form>
+
   </div> 
 
   <footer>
