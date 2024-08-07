@@ -8,45 +8,62 @@
 
 <style>
     
-
-body{
+body {
     font-family: sans-serif;
-}    
+    background-color:white;
+    margin: 0;
+}  
 
 main{
     margin-top: 30px;
 }
 
-.Header{
-    width: 100%;
+.header{
+    display: flex;
+    height: 130px;
+    align-items: center; 
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.647);
+  
     
 }
 
-.Menu{
+.header-logo{
+    width: auto;
+    height: 200px;
+    
+}
+
+.menu{
     display: flex;
     justify-content: space-around;
-    
-    background-image: linear-gradient(rgb(70, 216, 249), rgb(143, 237, 245));
-    height: 45px;
-    align-items: center;
+    height: 60px;
+    align-items: end;
     border-radius: 300px;
     
+    
 }
-.Menu a{
+.menu a{
     text-decoration: none;
     font-weight: 550;
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.4s linear; 
 
 }
 
-.Menu a:hover {
-    background-color: rgba(0, 73, 151, 0.516);
-    height: 20px;
-    width: 50px;
-    border-radius: 30px;
-    font-size: 20px;
+.menu a:hover {
+    
+    border-bottom: 3px solid #6ed73e
+    
 }
 
-.Box{
+ul{
+    list-style-type: none;
+    width: 70%;
+}
+
+.box{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -59,13 +76,13 @@ main{
     
     }
 
-    .Box a{
+    .box a{
         text-decoration: none;
         font-weight: 500;
        
     }
 
-    .City{
+    .city{
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -74,7 +91,7 @@ main{
     }
 
     
-    .Nazwa{
+    .nazwa{
     display: flex;
     align-items: left;
     
@@ -85,7 +102,7 @@ main{
         
     }
     
-   .Karta img{
+   .karta img{
         height: 500px;
         width: 45%;  
         border-radius: 30px;
@@ -93,7 +110,7 @@ main{
         
     }
     
-    .Karta{
+    .karta{
      display: flex;
      flex-wrap: wrap;
      justify-content: space-between;
@@ -126,7 +143,7 @@ main{
         font-size: 15px;
     }
 
-    .Karta{
+    .karta{
         display: flex;
         justify-content: center;
         width: 100%;
@@ -134,18 +151,18 @@ main{
 
     
 
-    .Karta img{
+    .karta img{
         height: 50vw;  
         border-radius: 30px;
         width: 90%;
         
     }
     
-    .Mapa{
+    .mapa{
         width: 100vw;
     }
 
-    .Mapa iframe{
+    .mapa iframe{
         width: 100%;
     }
     
@@ -153,7 +170,7 @@ main{
 
     @media only screen and (max-width: 610px){
 
-        .Miasta{
+        .miasta{
         margin-left: auto;
         margin-right: auto;
         width: 100%;
@@ -162,7 +179,7 @@ main{
     }
 
     @media only screen and (max-width: 1340px){
-        .Karta{
+        .karta{
         display: flex;
         justify-content: center;
         width: 100%;
@@ -183,8 +200,9 @@ h1{
     display: flex;
     flex-direction: row;
    justify-content: center;
-    background-color: rgba(59, 146, 212, 0.366);
+   background-color: rgba(0, 0, 0, 0.355);
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer img{
@@ -216,25 +234,26 @@ span {
 </style>
 <body>
 
-    <div class="Header">
-    
-        <header>
-            <h1>ZAPISZ SIĘ NA WYŚCIG</h1>
-        </header>
-    
-        <div class="Menu">
-            <div><a href="praktykaprojekt.html#1">STRONA GŁÓWNA</a></div>
-            <div><a href="treningi.html">TRENINGI</a></div>
-            <div><a href="Wyscigi.html">WYŚCIGI</a></div>
-            <div><a href="Kontakt.html">KONTAKT</a></div>
-        </div>
-    
-    </div>
+    <header>
 
-    <div class="Box">
+        <div class="header">
+   
+           <img class="header-logo" src="Photos/Logo.png">
+           
+               <ul class="menu">
+                   <li><a href="praktykaprojekt.html#1">STRONA GŁÓWNA</a></li>
+                   <li><a href="treningi.html">TRENINGI</a></li>
+                   <li><a href="Wyscigi.html">WYŚCIGI</a></li>
+                   <li><a href="Kontakt.html">KONTAKT</a></li>
+               </ul>
+         </div>
+           
+       </header>
+
+ <div class="box">
         <h3>Wybierz w jakim mieście chcesz startować</h3>
 
-    <div class="City">
+    <div class="city">
     <div><a href="#section1">Szczecin</a></div>
     <div><a href="#section2">Warszawa</a></div>
     <div><a href="#section3">Poznań</a></div>
@@ -243,8 +262,8 @@ span {
    
     <main>
        <section id="section1">
-           <div class="Nazwa"><h1>Szczecin</h1></div> 
-           <div class="Karta-kontener"><div class="Karta"><img src="Photos/bieg3.jpg">
+           <div class="nazwa"><h1>Szczecin</h1></div> 
+           <div class="karta-kontener"><div class="karta"><img src="Photos/bieg3.jpg">
             <div><p>
                 <ul>
                     <h2>WYŚCIG 5km</h2>
@@ -255,7 +274,7 @@ span {
                 </ul>
             </p>
         </div>
-        <div class="Mapa"><h2>Lokalizacja startu</h2><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2827.0479985554693!2d14.56263771341638!3d53.42815892258467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47aa090b4747e3b5%3A0x20b10d9a360fd1eb!2sWa%C5%82y%20Chrobrego!5e0!3m2!1spl!2spl!4v1722589814131!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <div class="mapa"><h2>Lokalizacja startu</h2><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2827.0479985554693!2d14.56263771341638!3d53.42815892258467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47aa090b4747e3b5%3A0x20b10d9a360fd1eb!2sWa%C5%82y%20Chrobrego!5e0!3m2!1spl!2spl!4v1722589814131!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
         </div>
     </div>
         <button class="przycisk">ZAPISZ SIĘ</button>
@@ -264,8 +283,8 @@ span {
     
 
         <section id="section2">
-            <div class="Nazwa"><h1>Warszawa</h1></div> 
-           <div class="Karta-kontener"><div class="Karta"><img src="Photos/bieg5.jpeg">
+            <div class="nazwa"><h1>Warszawa</h1></div> 
+           <div class="karta-kontener"><div class="karta"><img src="Photos/bieg5.jpeg">
             <div><p>
                 <ul>
                     <h2>WYŚCIG 10km</h2>
@@ -275,15 +294,15 @@ span {
                 </ul>
                 </p>
             </div>
-            <div class="Mapa"><h2>Lokalizacja startu</h2><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1452.4132006389723!2d21.010938347266876!3d52.249595223667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc6f0d06ff2b%3A0xc6dd4889bd3390ca!2sMuzeum%20Warszawy!5e0!3m2!1spl!2spl!4v1722591749953!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </ul></div>
+            <div class="mapa"><h2>Lokalizacja startu</h2><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1452.4132006389723!2d21.010938347266876!3d52.249595223667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc6f0d06ff2b%3A0xc6dd4889bd3390ca!2sMuzeum%20Warszawy!5e0!3m2!1spl!2spl!4v1722591749953!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </ul></div>
         </div>
     </div>
         <button class="przycisk">ZAPISZ SIĘ</button>
         </section>
 
         <section id="section3" style="margin-bottom: 50px;">
-            <div class="Nazwa"><h1>Poznań</h1></div> 
-            <div class="Karta-kontener"><div class="Karta"><img src="Photos/bieg4.jpg">
+            <div class="nazwa"><h1>Poznań</h1></div> 
+            <div class="karta-kontener"><div class="karta"><img src="Photos/bieg4.jpg">
             <div><p>
                 <ul>
                     <h2>WYŚCIG 5km</h2>
@@ -293,7 +312,7 @@ span {
                 </ul>
             </p>
         </div>
-        <div class="Mapa"><h2>Lokalizacja startu</h2><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20025.37439584441!2d16.914104303909415!3d52.44452292718656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045cb3046e0225%3A0xe368cedde860e1b1!2sFort%20V%20Waldersee%20I!5e0!3m2!1spl!2spl!4v1722591813502!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>     </div>             
+        <div class="mapa"><h2>Lokalizacja startu</h2><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20025.37439584441!2d16.914104303909415!3d52.44452292718656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045cb3046e0225%3A0xe368cedde860e1b1!2sFort%20V%20Waldersee%20I!5e0!3m2!1spl!2spl!4v1722591813502!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>     </div>             
         </div>
         </div>
         <button class="przycisk">ZAPISZ SIĘ</button>
@@ -303,9 +322,8 @@ span {
 
      <footer>
         <div class = "footer">
-            <div><img src="Photos/bieg2.png"></div>
-            <div><h1>BIEGAJ Z NAMI!</h1></div>
-            <div style="display: flex; align-items: center;"><span>&#9993;</span><a href="mailto: biegajznami@gmail.com">biegajznami@gmail.com</a></div>
+            <div><img src="Photos/Logo.png"></div>
+            <div style="display: flex; align-items: center; color:rgba(0, 0, 0, 0.482); font-family: Verdana, Geneva, Tahoma, sans-serif;">© RUNCOMPANY.PL 2017-2020.</div>
         </div>
         
     </footer>

@@ -9,36 +9,60 @@
 
 <style>
 
-body{
-  font-family: sans-serif;
+body {
+    font-family: sans-serif;
+    background-color:white;
+    margin: 0;
 }
 
-.Menu{
-  display: flex;
-  justify-content: space-around;
-  background-image: linear-gradient(rgb(70, 216, 249), rgb(143, 237, 245));
-  height: 45px;
-  align-items: center;
-  border-radius: 300px;
+.header{
+    display: flex;
+    height: 130px;
+    align-items: center; 
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.647);
+  
     
 }
 
-.Menu a{
-  text-decoration: none;
-  font-weight: 550;
+
+.header-logo{
+    width: auto;
+    height: 200px;
+    
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    align-items: end;
+    border-radius: 300px;
+    
+    
+}
+.menu a{
+    text-decoration: none;
+    font-weight: 550;
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.4s linear; 
 
 }
 
-.Menu a:hover {
-  background-color: rgba(0, 73, 151, 0.516);
-  height: 20px;
-  width: 50px;
-  border-radius: 30px;
-  font-size: 20px;
+.menu a:hover {
+    
+    border-bottom: 3px solid #6ed73e
+    
+}
+
+ul{
+    list-style-type: none;
+    width: 70%;
 }
 
 
-.Box{
+.box{
 
   background-color: #f2f2f2;
   height: 450px;
@@ -57,25 +81,13 @@ body{
 
 }
 
-.Box label{
+.box label{
   text-align: right;
   width: 100px;
   font-size: 20px;
 }
 
-.Nagłówek{
-  background-image: linear-gradient(rgb(70, 216, 249), rgb(143, 237, 245));
-  border-radius: 300px;
 
-}
-
-.Header img{
-  width: auto;
-  height: 150px;
-  position: absolute;
-  top: 20px;
-  left: 50px;
-}
 
 h1{
   color: rgb(0, 0, 0);
@@ -90,12 +102,7 @@ h1{
 
     @media only screen and (max-width: 1080px){
 
-      .Header img{
-      width: auto;
-      height: 80px;
-      top: 10px;
-      left: 40px;
-      }
+      
 
       h1{
 
@@ -105,7 +112,7 @@ h1{
       font-size: 30px;
       }
 
-      .Box{
+      .box{
         background-color: #f2f2f2;
         height: 450px;
         padding: 20px;
@@ -123,12 +130,7 @@ h1{
 
     @media only screen and (max-width: 460px){
 
-      .Header img{
-        width: auto;
-        height: 60px;
-        top: 10px;
-        left: 30px;
-      }
+      
 
  
       .container{
@@ -145,13 +147,14 @@ h1{
 
 
 
-  .footer{
+    .footer{
     width: 100%;
     display: flex;
     flex-direction: row;
    justify-content: center;
-    background-color: rgba(59, 146, 212, 0.366);
+   background-color: rgba(0, 0, 0, 0.355);
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer img{
@@ -186,23 +189,23 @@ span {
 
 <body>
 
-<div class="Header">
-    
   <header>
-      <h1>Skontaktuj się z nami</h1>
-      <img src="Photos/bieg2.png">
-  </header>
 
-  <div class="Menu">
-      <div><a href="praktykaprojekt.html#1">STRONA GŁÓWNA</a></div>
-      <div><a href="treningi.html">TRENINGI</a></div>
-      <div><a href="Wyscigi.html">WYŚCIGI</a></div>
-      <div><a href="Kontakt.html">KONTAKT</a></div>
-  </div>
+    <div class="header">
 
-</div>
+       <img class="header-logo" src="Photos/Logo.png">
+       
+           <ul class="menu">
+               <li><a href="praktykaprojekt.html#1">STRONA GŁÓWNA</a></li>
+               <li><a href="treningi.html">TRENINGI</a></li>
+               <li><a href="Wyscigi.html">WYŚCIGI</a></li>
+               <li><a href="Kontakt.html">KONTAKT</a></li>
+           </ul>
+     </div>
+       
+   </header>
 
-<div class="Box">
+<div class="box">
       <div>
       <label>Imię</label>
       <br>
@@ -233,11 +236,9 @@ span {
 
   <footer>
     <div class = "footer">
-        <div><img src="Photos/bieg2.png"></div>
-        <div><h1>BIEGAJ Z NAMI!</h1></div>
-        <div style="display: flex; align-items: center;"><span>&#9993;</span><a href="mailto: biegajznami@gmail.com">biegajznami@gmail.com</a></div>
+        <div><img src="Photos/Logo.png"></div>
+        <div style="display: flex; align-items: center; color:rgba(0, 0, 0, 0.482); font-family: Verdana, Geneva, Tahoma, sans-serif;">© RUNCOMPANY.PL 2017-2020.</div>
     </div>
     
 </footer>
-
 </body>

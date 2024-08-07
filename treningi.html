@@ -8,37 +8,56 @@
 
 <STYLE>
 
-body{
-    font-size: 18px;
+body {
     font-family: sans-serif;
+    background-color:white;
+    margin: 0;
 }
 
-.Header{
-    width: 100%;
+.header{
+    display: flex;
+    height: 130px;
+    align-items: center; 
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.647);
+  
+    
 }
 
-.Menu{
+
+.header-logo{
+    width: auto;
+    height: 200px;
+    
+}
+
+.menu{
     display: flex;
     justify-content: space-around;
-    
-    background-image: linear-gradient(rgb(70, 216, 249), rgb(143, 237, 245));
-    height: 45px;
-    align-items: center;
+    height: 60px;
+    align-items: end;
     border-radius: 300px;
     
+    
 }
-.Menu a{
+.menu a{
     text-decoration: none;
     font-weight: 550;
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.4s linear; 
 
 }
 
-.Menu a:hover {
-    background-color: rgba(0, 73, 151, 0.516);
-    height: 20px;
-    width: 50px;
-    border-radius: 30px;
-    font-size: 20px;
+.menu a:hover {
+    
+    border-bottom: 3px solid #6ed73e
+    
+}
+
+ul{
+    list-style-type: none;
+    width: 70%;
 }
 
 table{
@@ -61,13 +80,13 @@ background-color: rgb(43, 73, 181);
 color: white;
 }
 
-.Box{
+.box{
     margin-left: 20px;
     margin-right: 20px;
     
 }
 
-.Box p{
+.box p{
     max-width: 1240px;
     
 }
@@ -101,7 +120,7 @@ h2{
     height: 20px;
 }
 
-.Plany p{
+.plany p{
     font-size: 3vw;
 }
 
@@ -109,7 +128,7 @@ h2{
 
 @media only screen and (max-width: 610px){
 
-.Plany p{
+.plany p{
     font-size: 3vw;
 }
 
@@ -120,10 +139,10 @@ h2{
     display: flex;
     flex-direction: row;
    justify-content: center;
-    background-color: rgba(59, 146, 212, 0.366);
+   background-color: rgba(0, 0, 0, 0.355);
     align-items: center;
+    flex-wrap: wrap;
 }
-
 
 .footer img{
     width: auto;
@@ -154,23 +173,24 @@ span {
 
 <body>
 
-    <div class="Header">
+    <header>
+
+        <div class="header">
+   
+           <img class="header-logo" src="Photos/Logo.png">
+           
+               <ul class="menu">
+                   <li><a href="praktykaprojekt.html#1">STRONA GŁÓWNA</a></li>
+                   <li><a href="treningi.html">TRENINGI</a></li>
+                   <li><a href="Wyscigi.html">WYŚCIGI</a></li>
+                   <li><a href="Kontakt.html">KONTAKT</a></li>
+               </ul>
+         </div>
+           
+    </header>
     
-        <header>
-            <h1>Plany treningowe</h1>
-        </header>
 
-     <div class="Menu">
-        <div><a href="praktykaprojekt.html#1">STRONA GŁÓWNA</a></div>
-        <div><a href="treningi.html">TRENINGI</a></div>
-        <div><a href="Wyscigi.html">WYŚCIGI</a></div>
-        <div><a href="Kontakt.html">KONTAKT</a></div>
-     </div>
-
-    </div>
-    
-
-    <div class="Box">
+    <div class="box">
          <h2>PLAN 5KM</h2>
             
       <table>
@@ -305,9 +325,8 @@ span {
 
 <footer>
     <div class = "footer">
-        <div><img src="Photos/bieg2.png"></div>
-        <div><h1>BIEGAJ Z NAMI!</h1></div>
-        <div style="display: flex; align-items: center;"><span>&#9993;</span><a href="mailto: biegajznami@gmail.com">biegajznami@gmail.com</a></div>
+        <div><img src="Photos/Logo.png"></div>
+        <div style="display: flex; align-items: center; color:rgba(0, 0, 0, 0.482); font-family: Verdana, Geneva, Tahoma, sans-serif;">© RUNCOMPANY.PL 2017-2020.</div>
     </div>
     
 </footer>

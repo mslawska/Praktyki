@@ -1,52 +1,59 @@
 body {
     font-family: sans-serif;
     background-color:white;
-    
+    margin: 0;
 }
 
-.Header{
+.header{
     display: flex;
-    
-    height: auto;
+    height: 130px;
     align-items: center; 
     justify-content: center;
-    
+    background-color: rgba(0, 0, 0, 0.647);
   
     
 }
 
 
-.Header img{
+.header-logo{
     width: auto;
-    height: 150px;
+    height: 200px;
     
 }
 
-.Menu{
+.menu{
     display: flex;
     justify-content: space-around;
-    
-    background-image: linear-gradient(rgb(70, 216, 249), rgb(143, 237, 245));
     height: 60px;
-    align-items: center;
+    align-items: end;
     border-radius: 300px;
     
+    
 }
-.Menu a{
+.menu a{
     text-decoration: none;
     font-weight: 550;
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.4s linear; 
+
+}
+
+.menu a:hover {
     
-
-}
-.Menu a:hover {
-    background-color: rgba(0, 73, 151, 0.516);
-    height: 20px;
-    width: 50px;
-    border-radius: 30px;
-    font-size: 20px;
+    border-bottom: 3px solid #6ed73e
+    
 }
 
-.Box{
+ul{
+    list-style-type: none;
+    width: 70%;
+}
+
+
+
+
+.box{
     max-width: 1240px;
     margin: 0 auto 80px;
     margin-top: 0px;
@@ -54,7 +61,7 @@ body {
     margin-top: 50px;
 }
 
-.Box p{
+.box p{
     font-size: 1.2em;
 }
 .container{
@@ -143,8 +150,9 @@ h3{
     display: flex;
     flex-direction: row;
    justify-content: center;
-    background-color: rgba(59, 146, 212, 0.366);
+   background-color: rgba(0, 0, 0, 0.355);
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer img{
@@ -167,40 +175,80 @@ span {
   } 
 
   a {
-    margin-left: 5px; 
+    
     text-decoration: none;
+    color:black
    
 }
 
-@media only screen and (max-width: 1080px){
+@media only screen and (max-width: 1024px){
 
     .photo{
-        width: 80%;
-        height: 350px;
+        width: 90%;
+        height: 50vw;
+        margin-left: auto;
+        margin-right: auto;
         
     }
 
-    .Header img{
+    .card1{
+        display: flex;
+        flex-direction: column;
         width: auto;
-        height: 65px;
+        flex-wrap: wrap;
 
+    }
+
+    .card2{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    
+    .header-logo{
+        width: auto;
+        height: 150px;
         top: 10px;
         left: 140px;
         
     }
     
     
-    .Header{
+    .header{
      
         width: auto;
         height: auto;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+    
+    }
+
+    .footer img{
+    width: 100px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    }
+
+    .menu{
+        display: flex;
+        justify-content: space-around;
+        height: 60px;
+        align-items: end;
+        border-radius: 300px;
         
+        
+    }
+
+    .menu a{
+        text-decoration: none;
+        font-weight: 400px;
        
-        
+    
     }
     
 }
+
+
 
