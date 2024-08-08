@@ -65,12 +65,11 @@ ul{
 .box{
 
   background-color: #f2f2f2;
-  width: 500px;
+  width: 300px;
   height: 100%;
   padding: 20px;
   margin-bottom: 100px;
   margin: 0 auto;
-  width: 400px;
   border-radius: 20px;
   top:50px;
   display: flex;
@@ -110,33 +109,59 @@ h1{
       font-size: 30px;
       }
 
+     
       .box{
         
-        height: 450px;
-        padding: 20px;
-        margin-bottom: 100px;
-        margin: 0 auto;
-        width: 400px;
-        border-radius: 20px;
-        top:50px;
+        width: auto;
+        
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
         align-items: center;    
         border: 2px solid black;
         }
+
+        .menu{
+        display: flex;
+        justify-content: space-around;
+        height: 60px;
+        align-items: end;
+        border-radius: 300px;
+        
+        
+       }
+
+      .menu a{
+        text-decoration: none;
+        font-weight: 400px;
+       
+    
+      }
     }
 
     @media only screen and (max-width: 460px){
 
+      .box{
+        margin: 10px;
+      }
       
+      .header-logo{
+        width: auto;
+        height: 100px;
+      }
 
- 
+      .header{
+        flex-direction: column;
+      }
       .container{
  
         width: 80%;
         height: 450px;
       }
-    
+      
+      .input{
+        width: auto;
+      }
       h1{
         font-size: 20px;
       }
@@ -187,7 +212,6 @@ input, textarea{
   font-size: 18px;
   display: flex;
   align-items: center;
-  width: 300px;
   padding: 10px 0;
   margin-top: 30px
 }
@@ -253,6 +277,6 @@ input, textarea{
         <div><img src="Photos/Logo.png"></div>
         <div style="display: flex; align-items: center; color:rgba(0, 0, 0, 0.482); font-family: Verdana, Geneva, Tahoma, sans-serif;">© RUNCOMPANY.PL 2017-2020.</div>
     </div>
-    
-</footer>
+  </footer>
+
 </body>

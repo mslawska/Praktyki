@@ -6,18 +6,19 @@ body {
 
 .header{
     display: flex;
+    position: relative;
     height: 130px;
     align-items: center; 
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.647);
-  
-    
+   
 }
 
 
 .header-logo{
     width: auto;
-    height: 200px;
+    height: 130px;
+    padding: 15px;
     
 }
 
@@ -27,15 +28,19 @@ body {
     height: 60px;
     align-items: end;
     border-radius: 300px;
+    padding: 10px 10px;
     
     
 }
+
+
 .menu a{
     text-decoration: none;
     font-weight: 550;
     color: white;
     border-bottom: 3px solid transparent;
     transition: border-bottom 0.4s linear; 
+    box-sizing:border-box;
 
 }
 
@@ -47,7 +52,7 @@ body {
 
 ul{
     list-style-type: none;
-    width: 70%;
+   
 }
 
 
@@ -58,7 +63,7 @@ ul{
     margin: 0 auto 80px;
     margin-top: 0px;
     text-align: center;
-    margin-top: 50px;
+    
 }
 
 .box p{
@@ -183,6 +188,8 @@ span {
 
 @media only screen and (max-width: 1024px){
 
+
+    
     .photo{
         width: 90%;
         height: 50vw;
@@ -205,24 +212,7 @@ span {
         width: auto;
     }
     
-    .header-logo{
-        width: auto;
-        height: 150px;
-        top: 10px;
-        left: 140px;
-        
-    }
     
-    
-    .header{
-     
-        width: auto;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    
-    }
 
     .footer img{
     width: 100px;
@@ -231,24 +221,82 @@ span {
     align-items: center;
     }
 
-    .menu{
-        display: flex;
-        justify-content: space-around;
-        height: 60px;
-        align-items: end;
-        border-radius: 300px;
-        
-        
-    }
-
-    .menu a{
-        text-decoration: none;
-        font-weight: 400px;
-       
     
-    }
     
 }
 
+@media only screen and (max-width: 750px){
+
+.header{
+    
+    height: 70px;
+    padding: 30px;
+}
+
+.header-logo{
+    width: auto;
+    padding: 15px;
+    position: absolute;
+    left: 20px;
+}
+
+.menu{
+    display: none;
+}
+
+.menu-mobile{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(48, 45, 45, 0.9);
+    transition: border-bottom 0.4s linear; 
+   
+}
+
+.menu-mobile a:hover {
+    
+    border-bottom: 3px solid #6ed73e
+    
+}
+.menu-mobile a{
+    color: white;
+}
+
+.menu-icon{
+    width: 100%;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px 0;
+    
+}
+
+ul{
+    text-align: center;
+    
+}
+li{
+    padding: 5px;
+}
+button{
+    
+    background: none;
+    border: none;
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    
+}
+.lo{
+    display: flex;
+    flex-direction: column;
+    
+}
+   
+.box{
+    margin-top: 250px;
+}
+    
+}
 
 
