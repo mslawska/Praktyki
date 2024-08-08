@@ -186,6 +186,8 @@ span {
    
 }
 
+
+
 @media only screen and (max-width: 1024px){
 
 
@@ -251,6 +253,7 @@ span {
     right: 0;
     background-color: rgba(48, 45, 45, 0.9);
     transition: border-bottom 0.4s linear; 
+    
    
 }
 
@@ -277,6 +280,7 @@ ul{
 }
 li{
     padding: 5px;
+    font-weight: 700;
 }
 button{
     
@@ -296,7 +300,9 @@ button{
 .box{
     margin-top: 250px;
 }
-    
+
+#myLinks {
+    display: none;
 }
 
-
+}
