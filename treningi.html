@@ -14,32 +14,41 @@ body {
     margin: 0;
 }
 
+.header-container{
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  justify-content: space-between;
+  display: flex;
+}
+
 .header{
     display: flex;
-    height: 130px;
+    position: relative;
     align-items: center; 
-    justify-content: center;
     background-color: rgba(0, 0, 0, 0.647);
-  
     
+
 }
 
 
 .header-logo{
     width: auto;
     height: 130px;
+    margin-right: 20px;
+    padding: 15px 0;
     
 }
 
 .menu{
+    
     display: flex;
-    justify-content: space-around;
-    height: 60px;
-    align-items: end;
-    border-radius: 300px;
-    
-    
+    padding: 0 30px;
+    margin-top: 100px;
 }
+
+
 .menu a{
     text-decoration: none;
     font-weight: 550;
@@ -47,6 +56,10 @@ body {
     border-bottom: 3px solid transparent;
     transition: border-bottom 0.4s linear; 
 
+}
+
+button{
+    display: none;
 }
 
 .menu a:hover {
@@ -57,7 +70,8 @@ body {
 
 ul{
     list-style-type: none;
-    
+    gap: 50px;
+  
 }
 
 table{
@@ -126,7 +140,84 @@ h2{
 
 }
 
-@media only screen and (max-width: 610px){
+
+@media only screen and (max-width: 750px){
+
+.header{
+    
+    height: 70px;
+    padding: 40px;
+}
+
+.header-logo{
+    width: auto;
+    padding: 15px;
+}
+
+.menu{
+    display: none;
+}
+
+.menu-mobile{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(48, 45, 45, 0.9);
+    transition: border-bottom 0.4s linear; 
+    
+   
+}
+
+.menu-mobile a:hover {
+    
+    border-bottom: 3px solid #6ed73e
+    
+}
+.menu-mobile a{
+    color: white;
+}
+
+.menu-icon{
+    width: 100%;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px 0;
+    
+}
+
+ul{
+    text-align: center;
+    
+}
+li{
+    padding: 5px;
+    font-weight: 700;
+}
+button{
+    display: block;
+    background: none;
+    border: none;
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    
+}
+.lo{
+    display: flex;
+    flex-direction: column;
+    margin-top:50px
+   
+}
+   
+.box{
+    margin-top: 80px;
+}
+
+#myLinks {
+    display: none;
+}
+
 
 .plany p{
     font-size: 3vw;
@@ -142,51 +233,66 @@ h2{
    background-color: rgba(0, 0, 0, 0.355);
     align-items: center;
     flex-wrap: wrap;
-}
-
-.footer img{
-    width: auto;
-    height: 65px;
-    display: flex;
-    align-items: center;
-    
-    
+    padding: 10px;
 }
 
 .footer h1{
     margin-right: 30px;
 }
-span {
-    content: "\2709";
-    font-size: 25px;
-    margin-bottom: 5px;
 
-  } 
 
-  a {
-    margin-left: 5px; 
-    text-decoration: none;
-   
-}
+
 
 </STYLE>
 
 <body>
 
-    <header>
+    <header class="header">
 
-        <div class="header">
-   
-           <img class="header-logo" src="Photos/Logo.png">
+        <div class = "header-container">
+
+         <img class="header-logo" src="Photos/Logo.png">
+        
+        
+            <div class="menu-mobile">
+                <div id="myLinks" style="display: none;">
+                <ul>
+                    <li><div style="padding: 5px"><a href="index.html#1">STRONA GŁÓWNA</div></a></li>
+                    <li><div style="padding: 5px"><a href="treningi.html">TRENINGI</div></a></li>
+                    <li><div style="padding: 5px"><a href="Wyscigi.html">WYŚCIGI</div></a></li>
+                    <li><div style="padding: 5px"><a href="Kontakt.html">KONTAKT</div></a></li>
+                </ul>
+
+            </div>
+        </div>
+       
+       
+            <ul class="menu">
+                <li><div style="padding: 5px"><a href="index.html#1">STRONA GŁÓWNA</div></a></li>
+                <li><div style="padding: 5px"><a href="treningi.html">TRENINGI</div></a></li>
+                <li><div style="padding: 5px"><a href="Wyscigi.html">WYŚCIGI</div></a></li>
+                <li><div style="padding: 5px"><a href="Kontakt.html">KONTAKT</div></a></li>
+            </ul> 
+            
+    
+        <button class="icon" onclick="myFunction()">
            
-               <ul class="menu">
-                   <li><a href="index.html">STRONA GŁÓWNA</a></li>
-                   <li><a href="treningi.html">TRENINGI</a></li>
-                   <li><a href="Wyscigi.html">WYŚCIGI</a></li>
-                   <li><a href="Kontakt.html">KONTAKT</a></li>
-               </ul>
-         </div>
+        
+            <div class="lo">
+            
+                <div class="menu-icon"></div>
+                <div class="menu-icon"></div>
+                <div class="menu-icon"></div>
            
+            </div>
+        
+        </button>
+    
+
+    
+      
+            <script src="script.js"></script>
+        </div>
     </header>
     
 
@@ -323,11 +429,10 @@ span {
     
 </div>
 
-<footer>
-    <div class = "footer">
-        <div><img src="Photos/Logo.png"></div>
-        <div style="display: flex; align-items: center; color:rgba(0, 0, 0, 0.482); font-family: Verdana, Geneva, Tahoma, sans-serif;">© RUNCOMPANY.PL 2017-2020.</div>
-    </div>
+<footer  class = "footer">
+    
+        
+    <div style="display: flex; align-items: center; color:rgba(0, 0, 0, 0.482); font-family: Verdana, Geneva, Tahoma, sans-serif;">© RUNCOMPANY.PL 2017-2020.</div>
     
 </footer>
 
