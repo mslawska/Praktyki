@@ -18,18 +18,19 @@ body {
 .header-logo{
     width: auto;
     height: 130px;
-    padding: 15px;
+    
     
 }
 
 .menu{
+    
+    
     display: flex;
     justify-content: space-around;
-    height: 60px;
+    height: 80px;
     align-items: end;
     border-radius: 300px;
-    padding: 10px 10px;
-    
+    gap:200px;
     
 }
 
@@ -40,8 +41,11 @@ body {
     color: white;
     border-bottom: 3px solid transparent;
     transition: border-bottom 0.4s linear; 
-    box-sizing:border-box;
 
+}
+
+button{
+    display: none;
 }
 
 .menu a:hover {
@@ -52,7 +56,8 @@ body {
 
 ul{
     list-style-type: none;
-   
+    gap: 50px;
+  
 }
 
 
@@ -221,6 +226,7 @@ span {
     height: 65px;
     display: flex;
     align-items: center;
+    
     }
 
     
@@ -283,7 +289,7 @@ li{
     font-weight: 700;
 }
 button{
-    
+    display: block;
     background: none;
     border: none;
     height: 50px;
