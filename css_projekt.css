@@ -127,36 +127,11 @@ h3{
 
 
 
-
-
 @media only screen and (max-width: 1024px){
 
 
     
-    .photo{
-        width: 90%;
-        height: 50vw;
-        margin-left: auto;
-        margin-right: auto;
-        
-    }
-
-    .card1{
-        display: flex;
-        flex-direction: column;
-        width: auto;
-        flex-wrap: wrap;
-
-    }
-
-    .card2{
-        display: flex;
-        flex-direction: column;
-        width: auto;
-    }
-    
-    
-    .box{
+        .box{
    
     width: 100%;
     height: 900px;
@@ -167,82 +142,4 @@ h3{
     
   
 }
-
-    
-    
-}
-
-@media only screen and (max-width: 750px){
-
-.header{
-    
-    height: 70px;
-    padding: 40px;
-}
-
-.header-logo{
-    width: auto;
-    padding: 15px;
-}
-
-.menu{
-    display: none;
-}
-
-.menu-mobile{
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background-color: rgba(48, 45, 45, 0.9);
-    transition: border-bottom 0.4s linear; 
-    
-   
-}
-
-.menu-mobile a:hover {
-    
-    border-bottom: 3px solid #6ed73e
-    
-}
-.menu-mobile a{
-    color: white;
-}
-
-.menu-icon{
-    width: 100%;
-    height: 5px;
-    background-color: rgb(255, 255, 255);
-    margin: 5px 0;
-    
-}
-
-ul{
-    text-align: center;
-    padding-left: 0;
-}
-li{
-    padding: 5px;
-    font-weight: 700;
-}
-button{
-    display: block;
-    background: none;
-    border: none;
-    height: 50px;
-    width: 50px;
-    margin-left: auto;
-    
-}
-.lo{
-    display: flex;
-    flex-direction: column;
-    margin-top:50px
-   
-}
-
-#myLinks {
-    display: none;
-}
-
 }
