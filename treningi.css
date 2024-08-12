@@ -5,65 +5,6 @@ body {
     margin: 0;
 }
 
-.header-container{
-  max-width: 1440px;
-  width: 100%;
-  padding: 0 20px;
-  margin: 0 auto;
-  justify-content: space-between;
-  display: flex;
-}
-
-.header{
-    display: flex;
-    position: relative;
-    align-items: center; 
-    background-color: rgba(0, 0, 0, 0.647);
-    
-
-}
-
-
-.header-logo{
-    width: auto;
-    height: 130px;
-    margin-right: 20px;
-    padding: 15px 0;
-    
-}
-
-.menu{
-    
-    display: flex;
-    padding: 0 30px;
-    margin-top: 100px;
-}
-
-
-.menu a{
-    text-decoration: none;
-    font-weight: 550;
-    color: white;
-    border-bottom: 3px solid transparent;
-    transition: border-bottom 0.4s linear; 
-
-}
-
-button{
-    display: none;
-}
-
-.menu a:hover {
-    
-    border-bottom: 3px solid #6ed73e
-    
-}
-
-ul{
-    list-style-type: none;
-    gap: 50px;
-  
-}
 
 table{
     border-collapse: collapse;
@@ -216,17 +157,3 @@ button{
 
 }
 
-.footer{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-   justify-content: center;
-   background-color: rgba(0, 0, 0, 0.355);
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 10px;
-}
-
-.footer h1{
-    margin-right: 30px;
-}
